@@ -1,0 +1,167 @@
+<!-- customization modal-->
+<!-- customization Modal 1-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+  aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+      </button>
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <!-- customization Modal - Title-->
+              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Simple
+                Query
+              </h2>
+              <!-- Icon Divider-->
+              <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+              </div>
+              <!-- customization Modal - Query result-->
+
+              <!-- customization Modal - Text-->
+              <p class="mb-5"><code>Query:{
+  Person
+  {
+    uri 
+    actions
+    {
+      uri
+      type
+      description
+      distance
+      startTime
+      {
+        year
+        month
+        day
+        hour
+        minute
+        second
+        formatted
+      }
+      endTime
+      {
+        year
+        month
+        day
+        hour
+        minute
+        second
+        formatted
+      }
+      physicalActivity
+      {
+        uri
+        category
+        additionalType
+      }
+    }
+  }
+}
+</code></p>
+              <textarea name="" id="simpleQueryResponse" cols="50" rows="5"></textarea>
+              <button class="btn btn-primary" id="simpleQuery">
+                <i class="fas fa-search"></i>
+                Execute Query
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- customization Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+  aria-labelledby="portfolioModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+      </button>
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <!-- customization Modal - Title-->
+              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Advanced
+                Query</h2>
+              <!-- Icon Divider-->
+              <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+              </div>
+
+              <!-- customization Modal - Text-->
+              <p class="mb-5"><code>Query:{
+  {
+  Person
+  {
+    uri 
+    actions (filter: {startTime_lt: { year: 2020 } physicalActivity:{category: "Running"}})
+    {
+      description
+      distance
+      startTime 
+      {
+        year
+      }
+      physicalActivity 
+      {
+        category
+      }
+    }
+  }
+}
+
+</code></p>
+              <textarea name="" id="advancedQueryResponse" cols="50" rows="5"></textarea>
+              <button class="btn btn-primary" id="advancedQuery">
+                <i class="fas fa-search"></i>
+                Execute Query
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Modal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+  aria-labelledby="portfolioModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+      </button>
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <!-- customization Modal - Title-->
+              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Custom
+                Query</h2>
+              <!-- Icon Divider-->
+              <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+              </div>
+              <!-- customization Modal - Image-->
+              <!-- customization Modal - Text-->
+              <p class="mb-5">For custom query, specific serverless function is required. Custom query schema can be
+                integrated into the Data cage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

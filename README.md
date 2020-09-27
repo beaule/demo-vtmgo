@@ -1,2 +1,2 @@
-# demo-vtmgo
+# sample-app
 Created with CodeSandbox
